@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enhanced HTML5 content page with lists, tables, media, and a fully structured, validated web form.">
+  <title>Enhanced HTML5 Form and Content</title>
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced HTML5 Content & Forms</h1>
+    <p>Demonstrating advanced HTML5 elements and form features.</p>
+  </header>
+
+  <main>
+    <!-- Section 1: Lists -->
+    <section>
+      <h2>Top Travel Destinations</h2>
+      <ol>
+        <li>Paris, France</li>
+        <li>Kyoto, Japan</li>
+        <li>New York City, USA</li>
+      </ol>
+
+      <h3>Travel Essentials</h3>
+      <ul>
+        <li>Passport and visas</li>
+        <li>Travel insurance</li>
+        <li>Local currency</li>
+      </ul>
+    </section>
+
+    <!-- Section 2: Tables -->
+    <section>
+      <h2>Sample Product Table</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Stock</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Backpack</td>
+            <td>$49.99</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Travel Mug</td>
+            <td>$9.99</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Camera</td>
+            <td>$299.99</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section>
+      <h2>Travel Media</h2>
+      <img src="travel.jpg" alt="Scenic view of mountains and lake" width="400">
+      <p>Enjoy this beautiful travel photo for inspiration.</p>
+
+      <audio controls>
+        <source src="welcome.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p>Listen to our welcome audio guide.</p>
+
+      <video controls width="400">
+        <source src="travel-video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+      <p>Watch our short travel clip.</p>
+    </section>
+
+    <!-- Section 4: HTML5 Form -->
+    <section>
+      <h2>Traveler Registration Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" placeholder="John" required autocomplete="given-name"><br><br>
+
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Doe" required autocomplete="family-name"><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email"><br><br>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}" required><br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" minlength="8" placeholder="Minimum 8 characters" required><br><br>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select><br><br>
+
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself" required></textarea><br><br>
+
+          <label for="newsletter">Subscribe to Newsletter:</label>
+          <input type="checkbox" id="newsletter" name="newsletter" checked><br><br>
+
+          <label for="profile-pic">Profile Picture:</label>
+          <input type="file" id="profile-pic" name="profile-pic" accept="image/*"><br><br>
+
+          <label for="readonly-field">Read-Only Info:</label>
+          <input type="text" id="readonly-field" name="readonly-field" value="Auto-filled info" readonly><br><br>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Enhanced Content Assignment</p>
+  </footer>
+
+</body>
+</html>
